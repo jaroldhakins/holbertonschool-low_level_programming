@@ -17,10 +17,12 @@ l = 'a';
 do {
 
 if (l != 'e' && l != 'q')
+
 {
 putchar(l);
-l++;
 }
+
+l++;
 
 } while (l <= 'z');
 
