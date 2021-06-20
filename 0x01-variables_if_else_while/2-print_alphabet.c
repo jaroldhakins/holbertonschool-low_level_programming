@@ -18,9 +18,10 @@ do {
 
 putchar(l);
 l++;
-putchar('\n');
 
 } while (l <= 'z');
+
+putchar('\n');
 
 return (0);
 
