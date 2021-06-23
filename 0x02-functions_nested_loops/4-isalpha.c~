@@ -1,0 +1,22 @@
+#include "holberton.h"
+
+/**
+ * _isalpha - determina si hay un caracter alfabetico
+ *
+ * @c: The character in ASCII code
+ *
+ * return: 1 si es un caracter alfabetico, return: 0 si es otro.
+ */
+
+int _isalpha(int c)
+{
+if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+{
+return (1);
+}
+else
+{
+return (0);
+}
+_putchar('\n');
+}
