@@ -11,24 +11,11 @@
 
 void print_line(int n)
 {
-if (n <= 0)
-{
-_putchar('\n');
-}
-else if (n == 2)
-{
-for (n = 0; n < 2; n++)
+char p;
+
+for (p = 0; p < n; p++)
 {
 _putchar('_');
 }
-_putchar('\n');
-}
-else
-{
-for (n = 0; n < 10; n++)
-{
-_putchar('_');
-}
-_putchar('\n');
-}
+  _putchar('\n');
 }
