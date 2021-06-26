@@ -17,5 +17,5 @@ for (p = 0; p < n; p++)
 {
 _putchar('_');
 }
-  _putchar('\n');
+_putchar('\n');
 }
