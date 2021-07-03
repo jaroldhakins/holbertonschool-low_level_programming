@@ -12,19 +12,19 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i, j;
+int a, b;
 
-for (i = 0; dest[i]; i++)
+for (a = 0; dest[a] != 0; a++)
 {
 }
-for (j = 0; src[j]; j++)
+for (b = 0; src[b]; b++)
 {
-if (j < n && src[j] != 0)
+if (b < n && src[b] != 0)
 {
-dest[i] = src[j];
+dest[a] = src[b];
 }
-i++;
+a++;
 }
-dest[i] = 0;
+dest[a] = 0;
 return (dest); 
 }
