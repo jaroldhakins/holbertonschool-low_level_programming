@@ -17,11 +17,12 @@ int a, b;
 for (a = 0; dest[a] != 0; a++)
 {
 }
-for (b = 0; b < n && src[b] != 0; b++)
+for (b = 0; b < n && src[b] != 0;)
 {
 dest[a] = src[b];
 a++;
+b++;
 }
-dest[a] = 0;
-return (dest); 
+dest[a] = '\0';
+return (dest);
 }
