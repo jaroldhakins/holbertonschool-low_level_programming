@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- * _strcmp - compare string values
- * @s1: input value
- * @s2: input value
+ * _strcmp - compara los valores de
+ * dos strings
+ *
+ * @s1: puntero
+ * @s2: puntero
  *
  * Return: s1[i] - s2[i]
  */
