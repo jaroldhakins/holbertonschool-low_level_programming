@@ -19,7 +19,7 @@ for (i = 0; dest[i]; i++)
 }
 for (j = 0; src[j]; j++)
 {
-if (j != n)
+if (j < n && src[j] != 0)
 {
 dest[i] = src[j];
 }
