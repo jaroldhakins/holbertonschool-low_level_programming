@@ -14,7 +14,7 @@ int a = 0;
 for (; n > 0; n--)
 {
 s[a] = b;
-i++;
+a++;
 }
 return (s);
 }
