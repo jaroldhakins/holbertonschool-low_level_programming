@@ -11,24 +11,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int a, b;
-unsigned int lon;
+unsigned int i, j;
+int bool;
 
-lon = 0;
-
-for (a = 0; s[a] != '\0'; a++)
+for (i = 0; s[i] != '\0'; i++)
 {
-for (b = 0; accept[b] != '\0' && accept[b] != s[a]; b++)
+bool = 1;
+for (j = 0; accept[j] != '\0'; j++)
 {
-if (s[a] == accept[b])
+if (s[i] == accept[j])
 {
-lon++;
-}
-if (accept[b] == '\0')
-{
-return (lon);
+bool = 0;
+break;
 }
 }
+if (bool == 1)
+{
+break;
 }
-return (lon);
+}
+return (i);
 }
