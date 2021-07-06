@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _strspn - da el numero de bytes de lon
  *
@@ -7,10 +8,13 @@
  *
  * Return: numero de bytes de lon
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 int a, b;
-unsigned int lon = 0;
+unsigned int lon;
+
+lon = 0;
 
 for (a = 0; s[a] != '\0'; a++)
 {
@@ -23,6 +27,7 @@ lon++;
 if (accept[b] == '\0')
 {
 return (lon);
+}
 }
 }
 return (lon);
