@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stddef.h>
+
 /**
  * _strchr - localiza caracteres en un string
  * @s: array o string
@@ -6,6 +8,7 @@
  *
  * Return: un puntero a un caracter
  */
+
 char *_strchr(char *s, char c)
 {
 int a;
