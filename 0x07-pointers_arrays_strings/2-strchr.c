@@ -1,7 +1,7 @@
 #include "holberton.h"
-#include <stddef.h>
 /**
  * _strchr - localiza caracteres en un string
+ *
  * @s: array o string
  * @c: caracter
  *
