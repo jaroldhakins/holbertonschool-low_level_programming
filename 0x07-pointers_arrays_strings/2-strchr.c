@@ -5,7 +5,7 @@
  * @s: array o string
  * @c: caracter
  *
- * Return: un puntero a un caracter
+ * Return: NULL
  */
 char *_strchr(char *s, char c)
 {

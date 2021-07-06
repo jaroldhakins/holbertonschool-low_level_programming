@@ -13,7 +13,7 @@ char *f;
 
 f = _strchr(s, 'l');
 
-if (f != NULL)
+if (f != '\0')
 {
 printf("%s\n", f);
 }
