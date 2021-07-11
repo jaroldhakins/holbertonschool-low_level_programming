@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main -  writes its name
- * @argc: arguement count
- * @argv: array of pointers to arguement strings
+ *
+ * @argc: arguemento
+ * @argv: array
+ *
  * Return: 0
  **/
 int main(int argc, char *argv[])
