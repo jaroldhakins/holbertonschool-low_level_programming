@@ -10,6 +10,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *dup;
 	int i, j;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -18,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (i = 0; s1[i] !='\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 
 	}
@@ -31,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i] !='\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		dup[i] = s1[i];
 	}
