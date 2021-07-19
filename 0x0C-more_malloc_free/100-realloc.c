@@ -2,10 +2,12 @@
 #include "holberton.h"
 /**
  * *_realloc -  reallocates a memory block using malloc and free
- * @ptr: void pointer
- * @old_size: already allocated size
- * @new_size: new size to allocate
- * Return: pointer to newly allocated memory or null
+ *
+ * @ptr: puntero
+ * @old_size: memoria ya alocada
+ * @new_size: memoria nueva
+ *
+ * Return: pointer a nueva memoria
  **/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
