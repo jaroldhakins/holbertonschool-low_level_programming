@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
-	
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -34,7 +33,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(100);
-		
 	}
 	i = get_op_func(argv[2])(n1, n2);
 	printf("%i\n", i);
