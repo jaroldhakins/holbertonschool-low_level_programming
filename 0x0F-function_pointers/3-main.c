@@ -18,15 +18,13 @@ int main(int argc, char *argv[])
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
-
-	i = get_op_func(argv[2])(n1, n2);
-	operator = argv[2];
 	
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+	operator = argv[2];
 	if (!(get_op_func(operator)))
 	{
 		printf("Error\n");
@@ -38,7 +36,7 @@ int main(int argc, char *argv[])
 		exit(100);
 		
 	}
-	
+	i = get_op_func(argv[2])(n1, n2);
 	printf("%i\n", i);
 
 	return (0);
