@@ -8,7 +8,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	int a;
+	size_t a = 2;
 	char *s;
 
 	for (a = 0; h; a++)
@@ -19,6 +19,6 @@ size_t list_len(const list_t *h)
 			s = "(nil)";
 		}
 		h = h->next;
-	}
+		}
 	return (a);
 }
