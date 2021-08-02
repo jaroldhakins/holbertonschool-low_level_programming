@@ -8,17 +8,19 @@
  */
 size_t list_len(const list_t *h)
 {
-	size_t a = 2;
+	int a;
 	char *s;
+	const list_t *cop = NULL;
 
-	for (a = 0; h; a++)
+	cop = h;
+	for (a = 0; cop; a++)
 	{
-		s = h->str;
+		s = cop->str;
 		if (s == NULL)
 		{
 			s = "(nil)";
 		}
-		h = h->next;
+		cop = cop->next;
 		}
 	return (a);
 }
