@@ -17,12 +17,19 @@ unsigned int binary_to_uint(const char *b)
 	for (i = strlen(b) - 1; b[i]; i--)
 	{
 		if (!b)
+		{
 			return (0);
-		if (b[i] != '0' &&  b[i] != '1')
+		}
+		if (b[i] == '0' ||  b[i] == '1')
+		{
+			entero = (b[i] - 48);
+			total += entero * pot;
+			pot *= 2;
+		}
+		else
+		{
 			return (0);
-		entero = (b[i] - 48);
-		total += entero * pot;
-		pot *= 2;
+		}
 	}
 	return (total);
 }
