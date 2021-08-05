@@ -9,29 +9,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0;
+	int i;
 	unsigned int pot = 1;
 	unsigned int total = 0;
 	unsigned int entero = 0;
 
-	while (b[i])
-		i++;
-	for (i = i - 1; b[i] != 0; i--)
+	for (i = strlen(b) - 1; b[i]; i--)
 	{
 		if (!b)
 		{
 			return (0);
 		}
-		if (b[i] == '0' ||  b[i] == '1')
-		{
-			entero = (b[i] - 48);
-			total += entero * pot;
-			pot *= 2;
-		}
-		else
+		if (b[i] == '0' &&  b[i] == '1')
 		{
 			return (0);
 		}
+		
+			entero = (b[i] - 48);
+			total += entero * pot;
+			pot *= 2;
 	}
 	return (total);
 }
