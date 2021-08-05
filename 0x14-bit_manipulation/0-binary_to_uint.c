@@ -24,10 +24,9 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		
-			entero = (b[i] - 48);
-			total += entero * pot;
-			pot *= 2;
+		entero = (b[i] - 48);
+		total += entero * pot;
+		pot *= 2;
 	}
 	return (total);
 }
