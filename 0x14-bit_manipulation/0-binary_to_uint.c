@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int total = 0;
 	unsigned int entero = 0;
 
-	for (i = strlen(b) - 1; b[i]; i--)
+	for (i = strlen(b) - 1; b[i]; i--, pot *= 2)
 	{
 		if (!b)
 			return (0);
@@ -22,7 +22,6 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		entero = (b[i] - 48);
 		total = total + (entero * pot);
-		pot *= 2;
 	}
 	return (total);
 }
