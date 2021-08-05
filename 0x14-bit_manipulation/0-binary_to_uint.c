@@ -9,12 +9,14 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
+	int i = 0;
 	unsigned int pot = 1;
 	unsigned int total = 0;
 	unsigned int entero = 0;
 
-	for (i = strlen(b) - 1; b[i] != 0; i--)
+	while (b[i])
+		i++;
+	for (i = i - 1; b[i] != 0; i--)
 	{
 		if (!b)
 		{
