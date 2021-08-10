@@ -29,14 +29,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		free(buffer);
 		return (0);
-		
 	}
 	o_write = write(STDOUT_FILENO, buffer, o_read);
 	if (o_write == -1 || o_read != o_write)
 	{
 		free(buffer);
 		return (0);
-		
 	}
 	free(buffer);
 	close(o);
