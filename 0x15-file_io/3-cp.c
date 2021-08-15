@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 /**
- * _error - Read file.
+ * err - Read file.
  * @e: Error number
  * @filename: File name
  */
