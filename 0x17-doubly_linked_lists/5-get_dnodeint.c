@@ -2,6 +2,7 @@
 /**
  * get_dnodeint_at_index - returns the index node
  * @head: pointer to list
+ * @index: iterador
  * Return: node or NULL
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
