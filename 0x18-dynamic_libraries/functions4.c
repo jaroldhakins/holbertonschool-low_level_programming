@@ -99,3 +99,13 @@ char *_strstr(char *haystack, char *needle)
 	}
 	return (0);
 }
+/**
+ * _atoi - converts str in int
+ * @s: string
+ * Return: integer
+ */
+int _atoi(char *s)
+{
+	(void)s;
+	return (0);
+}
