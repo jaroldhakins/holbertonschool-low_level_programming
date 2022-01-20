@@ -32,13 +32,9 @@ int mid;
 
 if (array == NULL)
 return (-1);
-if (size == 1)
-return (array[izq]);
 
 while (der >= izq)
 {
-if (izq == 0 && der == 0)
-return (-1);
 imprime(array, izq, der);
 mid = (der + izq) / 2;
 if (value == array[mid])
