@@ -32,6 +32,8 @@ int mid;
 
 if (array == NULL)
 return (-1);
+if (size == 1)
+return (array[izq]);
 
 while (der >= izq)
 {
