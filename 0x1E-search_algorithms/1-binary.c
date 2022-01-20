@@ -37,8 +37,10 @@ return (array[izq]);
 
 while (der >= izq)
 {
-mid = (der + izq) / 2;
+if (izq == 0 && der == 0)
+return (-1);
 imprime(array, izq, der);
+mid = (der + izq) / 2;
 if (value == array[mid])
 return (array[mid]);
 else if (value > array[mid])
